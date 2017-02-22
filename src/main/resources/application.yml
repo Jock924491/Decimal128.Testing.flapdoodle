@@ -1,0 +1,15 @@
+app:
+    name: decimal128Testing
+
+server:
+    context-path: /${app.name}
+    port: 9091
+spring:
+    data:
+        mongodb:
+          uri: mongodb://localhost:27017/Fields
+          database: Fields
+          repositories:
+            enabled: true
+    profiles:
+      active: dev
